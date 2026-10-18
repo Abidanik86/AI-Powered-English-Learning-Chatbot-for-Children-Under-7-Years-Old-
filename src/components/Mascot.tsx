@@ -17,15 +17,9 @@ export const Mascot: React.FC<MascotProps> = ({
   isCelebrating
 }) => {
   return (
-    <div className="mascot-wrapper" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+    <div className="mascot-wrapper">
       <div
         className={`mascot-container ${isCelebrating ? 'animate-wiggle' : 'animate-float'}`}
-        style={{
-          width: '160px',
-          height: '160px',
-          position: 'relative',
-          filter: 'drop-shadow(0 12px 16px rgba(180, 83, 9, 0.2))'
-        }}
       >
         <svg viewBox="0 0 200 200" width="100%" height="100%">
           <defs>
@@ -159,22 +153,8 @@ export const Mascot: React.FC<MascotProps> = ({
         )}
       </div>
 
-      <div
-        style={{
-          marginTop: '8px',
-          padding: '4px 14px',
-          background: 'rgba(255, 255, 255, 0.9)',
-          borderRadius: '999px',
-          fontWeight: 700,
-          fontSize: '14px',
-          color: '#92400E',
-          boxShadow: 'var(--shadow-sm)',
-          display: 'flex',
-          alignItems: 'center',
-          gap: '6px'
-        }}
-      >
-        <span>Barnaby the Bear</span>
+      <div className="mascot-name-badge">
+        <span>Barnaby</span>
         {isSpeaking && <span style={{ color: '#0284C7' }}>Speaking... 🔊</span>}
         {isListening && <span style={{ color: '#10B981' }}>Listening... 👂</span>}
       </div>

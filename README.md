@@ -1,3 +1,20 @@
+# AI-Powered English Learning Chatbot for Children (Under 7 Years Old)
+
+> **Evaluation Test Project for Full Stack AI Engineer Position at BRIMSEL**  
+> **Candidate:** ABID HASAN ANIK  
+> **Evaluators:** Farzana Rahman (`farzana@sharif.com`), Mashrur Rahman (`mashrur@sharif.com`)  
+> **Submission Deadline:** Sunday, October 18, 2026, at 7:00 PM  
+
+---
+
+## 🌐 Live Deployed Application
+
+- **Live URL:** [https://ai-powered-english-learning-chatbot-two.vercel.app/](https://ai-powered-english-learning-chatbot-two.vercel.app/)
+- **GitHub Repository:** [https://github.com/abidanik/ai-english-chatbot-under-7](https://github.com/abidanik/ai-english-chatbot-under-7)
+- **Collaborators Invited:** `farzana@sharif.com`, `mashrur@sharif.com`
+
+---
+
 ## 🎯 Requirements & Feature Verification Matrix
 
 | Requirement | Implementation Details | Status |

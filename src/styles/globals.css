@@ -139,6 +139,35 @@ h1, h2, h3, h4, .font-heading {
   flex-shrink: 0;
 }
 
+.mascot-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mascot-container {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  filter: drop-shadow(0 12px 16px rgba(180, 83, 9, 0.2));
+  transition: all 0.25s ease;
+}
+
+.mascot-name-badge {
+  margin-top: 8px;
+  padding: 4px 14px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 13px;
+  color: #92400E;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+}
+
 .chat-arena {
   flex: 1;
   display: flex;
@@ -155,18 +184,53 @@ h1, h2, h3, h4, .font-heading {
 @media (max-width: 860px) {
   .main-layout {
     flex-direction: column;
-    padding: 8px;
-    gap: 8px;
+    padding: 4px 6px;
+    gap: 6px;
   }
   .companion-sidebar {
     width: 100%;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 8px 14px;
-    border-radius: 16px;
+    flex-direction: row !important;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 4px 10px;
+    border-radius: 14px;
     gap: 8px;
+    max-height: 52px;
+    min-height: 52px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .mascot-wrapper {
+    flex-direction: row !important;
+    gap: 8px;
+    align-items: center;
+  }
+  .mascot-container {
+    width: 40px !important;
+    height: 40px !important;
+    filter: drop-shadow(0 2px 4px rgba(180, 83, 9, 0.15)) !important;
+  }
+  .mascot-name-badge {
+    margin-top: 0 !important;
+    padding: 2px 8px !important;
+    font-size: 11px !important;
   }
   .companion-sidebar .hide-on-mobile {
+    display: none !important;
+  }
+  .chat-arena {
+    border-radius: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 6px 10px !important;
+  }
+  header h1 {
+    font-size: 14px !important;
+  }
+  header p {
     display: none !important;
   }
 }
